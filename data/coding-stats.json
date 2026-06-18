@@ -1,0 +1,17 @@
+{
+  "leetcode": {
+    "solved": 0,
+    "easy": 0,
+    "medium": 0,
+    "hard": 0,
+    "contestRating": null
+  },
+  "geeksforgeeks": {
+    "problemsSolved": 0,
+    "codingScore": 0,
+    "instituteRank": null
+  },
+  "hackerrank": {
+    "certifications": ["Problem Solving", "Python"]
+  }
+}

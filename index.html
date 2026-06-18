@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio & Progress</title>
+    <meta name="description" content="Personal portfolio and progress tracking record.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="background-glow secondary"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Saksham.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="progress-dashboard.html">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content fade-in">
+                <h2 class="greeting">Hi, I'm <span class="highlight" id="user-name">Saksham</span></h2>
+                <h1 class="title">Building <span class="gradient-text">digital experiences</span> and tracking the journey.</h1>
+                <p class="subtitle">Welcome to my personal portfolio and progress record. Explore my latest work and see how I'm growing as an engineer.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="progress-dashboard.html" class="btn btn-secondary">Progress Dashboard</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title fade-in">My Projects <span style="display:block; width: 40px; height: 4px; background: var(--accent-1); margin: 15px auto 0; border-radius: 2px;"></span></h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be injected here via JavaScript -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer style="margin-top: 100px; padding: 60px 20px; border-top: 1px solid var(--glass-border); background: rgba(0,0,0,0.3);">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 10px;">Get in Touch</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 30px; font-size: 1.1rem;">Open to collaboration, internships, and interesting projects.</p>
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <a href="https://github.com/sakshamd19" target="_blank" style="color: var(--text-primary); text-decoration: none; font-weight: 500; transition: var(--transition);" onmouseover="this.style.color='var(--accent-1)'" onmouseout="this.style.color='var(--text-primary)'">GitHub</a>
+                <a href="#" style="color: var(--text-primary); text-decoration: none; font-weight: 500; transition: var(--transition);" onmouseover="this.style.color='var(--accent-1)'" onmouseout="this.style.color='var(--text-primary)'">LinkedIn</a>
+                <a href="#" style="color: var(--text-primary); text-decoration: none; font-weight: 500; transition: var(--transition);" onmouseover="this.style.color='var(--accent-1)'" onmouseout="this.style.color='var(--text-primary)'">Email</a>
+            </div>
+            <p style="color: var(--text-secondary); margin-top: 50px; font-size: 0.9rem;">&copy; <span id="current-year"></span> Saksham. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

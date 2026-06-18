@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forge - Development Progress</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="background-glow secondary"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Forge.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">&larr; Back to Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="progress-section" style="min-height: 100vh; padding-top: 150px;">
+            <h1 class="title" style="text-align: left; font-size: 3.5rem; margin-bottom: 10px;">Forge <span class="gradient-text">Progress Log</span></h1>
+            <p class="subtitle" style="text-align: left; margin: 0 0 40px 0; font-size: 1.1rem;">Follow the journey of building a GPT-style transformer from scratch.</p>
+            
+            <div class="contribution-section fade-in">
+                <h3 style="margin-bottom: 20px; font-weight: 600;">Activity Graph</h3>
+                <div class="contribution-graph-wrapper">
+                    <div style="display: flex; gap: 10px; align-items: flex-end; padding: 15px 15px 15px 0;">
+                        <div class="graph-days">
+                            <span>Sun</span>
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                        </div>
+                        <div class="contribution-graph" id="contribution-graph"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span>. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/forge-progress.js"></script>
+
+</body>
+</html>
