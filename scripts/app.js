@@ -15,6 +15,15 @@ const projects = [
         status: "Releasing Soon ⏳",
         progressLink: "sage-progress.html",
         featured: true
+    },
+    {
+        title: "VoltOS",
+        description: "A lightweight, custom operating system built entirely from scratch. No wrappers, no prebuilt kernels—just pure end-to-end development.",
+        tech: ["C", "C++", "Assembly", "OS Development"],
+        link: "#",
+        status: "Releasing Soon ⏳",
+        progressLink: "voltos-progress.html",
+        featured: true
     }
 ];
 
