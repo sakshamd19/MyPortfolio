@@ -13,7 +13,7 @@ const projects = [
         tech: ["PyTorch", "Transformers", "Machine Learning", "Python"],
         link: "#",
         status: "Releasing Soon ⏳",
-        progressLink: "progress-dashboard.html",
+        progressLink: "forge-progress.html",
         featured: true
     }
 ];
