@@ -1,5 +1,5 @@
 // No records currently, so the graph is a blank slate
-const forgeProgressRecords = [];
+const sageProgressRecords = [];
 
 // Reusable function to render everything
 function renderProgress() {
@@ -14,13 +14,13 @@ function renderGraph() {
     container.innerHTML = ''; // Clear existing
     
     // Compute logs mapping
-    const forgeActivityLogs = {};
-    forgeProgressRecords.forEach(record => {
-        if (forgeActivityLogs[record.date]) {
-            forgeActivityLogs[record.date].level = Math.min(4, forgeActivityLogs[record.date].level + 1);
-            forgeActivityLogs[record.date].log += " | " + record.title;
+    const sageActivityLogs = {};
+    sageProgressRecords.forEach(record => {
+        if (sageActivityLogs[record.date]) {
+            sageActivityLogs[record.date].level = Math.min(4, sageActivityLogs[record.date].level + 1);
+            sageActivityLogs[record.date].log += " | " + record.title;
         } else {
-            forgeActivityLogs[record.date] = { level: 2, log: record.title }; 
+            sageActivityLogs[record.date] = { level: 2, log: record.title }; 
         }
     });
 
@@ -44,10 +44,10 @@ function renderGraph() {
         cell.className = 'contribution-cell';
         cell.title = dateStr;
         
-        if (forgeActivityLogs[dateStr]) {
-            const level = forgeActivityLogs[dateStr].level;
+        if (sageActivityLogs[dateStr]) {
+            const level = sageActivityLogs[dateStr].level;
             cell.classList.add(`level-${level}`);
-            cell.title = `${dateStr}: ${forgeActivityLogs[dateStr].log}`;
+            cell.title = `${dateStr}: ${sageActivityLogs[dateStr].log}`;
         }
         
         container.appendChild(cell);
@@ -55,13 +55,13 @@ function renderGraph() {
 }
 
 function renderTimeline() {
-    const container = document.getElementById('forge-timeline-container');
+    const container = document.getElementById('sage-timeline-container');
     if (!container) return;
     
     container.innerHTML = ''; // Clear existing
     
     // Sort records by date descending (newest first)
-    const sortedRecords = [...forgeProgressRecords].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const sortedRecords = [...sageProgressRecords].sort((a, b) => new Date(b.date) - new Date(a.date));
     
     sortedRecords.forEach((record, index) => {
         const item = document.createElement('div');
@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const title = document.getElementById('log-title').value;
             const desc = document.getElementById('log-desc').value;
             
-            forgeProgressRecords.push({ date, title, description: desc });
-            localStorage.setItem('forgeProgress', JSON.stringify(forgeProgressRecords));
+            sageProgressRecords.push({ date, title, description: desc });
+            localStorage.setItem('sageProgress', JSON.stringify(sageProgressRecords));
             
             renderProgress();
             

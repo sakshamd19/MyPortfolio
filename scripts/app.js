@@ -8,12 +8,12 @@ const projects = [
         featured: false
     },
     {
-        title: "Forge",
+        title: "Sage",
         description: "A fully functional, GPT-style transformer built entirely from scratch in PyTorch. No wrappers, no pretrained weights—just pure end-to-end training and fine-tuning.",
         tech: ["PyTorch", "Transformers", "Machine Learning", "Python"],
         link: "#",
         status: "Releasing Soon ⏳",
-        progressLink: "forge-progress.html",
+        progressLink: "sage-progress.html",
         featured: true
     }
 ];
