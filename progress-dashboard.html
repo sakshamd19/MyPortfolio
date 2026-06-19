@@ -26,13 +26,7 @@
     <main>
         <section class="progress-section" style="min-height: 100vh; padding-top: 150px;">
             <h1 class="title fade-in" style="text-align: center; font-size: 3.5rem; margin-bottom: 10px;">Progress <span class="gradient-text">Dashboard</span></h1>
-            <p class="subtitle fade-in" style="text-align: center; margin: 0 auto 40px auto; font-size: 1.1rem; max-width: 600px;">A high-level view of my learning journey, coding profile, and current focus.</p>
-            
-            <div class="tabs-nav fade-in">
-                <button class="tab-btn active" data-tab="tab-learning">Learning Journey</button>
-                <button class="tab-btn" data-tab="tab-coding">Coding Profile</button>
-                <button class="tab-btn" data-tab="tab-focus">Current Focus</button>
-            </div>
+            <p class="subtitle fade-in" style="text-align: center; margin: 0 auto 40px auto; font-size: 1.1rem; max-width: 600px;">A high-level view of my learning journey and academic progress.</p>
             
             <div id="dashboard-content" style="display: flex; flex-direction: column; gap: 40px; max-width: 1000px; margin: 0 auto; width: 100%;">
                 
@@ -383,126 +377,9 @@
                 </div>
 
                 <!-- Tab 2: Coding Profile -->
-                <!-- Tab 2: Coding Profile (Rewritten) -->
-                <div id="tab-coding" class="tab-content" style="width: 100%;">
-                    
-                    <div style="display: flex; flex-direction: column; gap: 30px; width: 100%;">
-                        
-                        <!-- GitHub Profile -->
-                        <div style="background: rgba(17, 24, 39, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; margin-bottom: 20px; flex-wrap: wrap; gap: 15px;">
-                                <div>
-                                    <h2 style="font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 5px;">GitHub</h2>
-                                    <p style="color: #94a3b8; font-size: 1.1rem; margin: 0;">sakshamd19</p>
-                                </div>
-                                <a href="https://github.com/sakshamd19" target="_blank" style="background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 100%); color: #fff; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);">View Profile &rarr;</a>
-                            </div>
-                            
-                            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                                <div style="background: rgba(255,255,255,0.03); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02);">
-                                    <span style="display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">Repositories</span>
-                                    <span style="color: #fff; font-size: 1.5rem; font-weight: 700;">8</span>
-                                </div>
-                                <div style="background: rgba(255,255,255,0.03); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02);">
-                                    <span style="display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">Followers</span>
-                                    <span style="color: #fff; font-size: 1.5rem; font-weight: 700;">12</span>
-                                </div>
-                                <div style="background: rgba(255,255,255,0.03); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02); flex-grow: 1;">
-                                    <span style="display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">Top Languages</span>
-                                    <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                        <span style="color: #00d4ff; font-weight: 600;">HTML</span>
-                                        <span style="color: #00d4ff; font-weight: 600;">CSS</span>
-                                        <span style="color: #00d4ff; font-weight: 600;">JavaScript</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Tab removed: Coding Profile -->
 
-                        <div style="display: flex; gap: 30px; flex-wrap: wrap;">
-                            
-                            <!-- LeetCode Profile -->
-                            <div style="flex: 1; min-width: 300px; background: rgba(17, 24, 39, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                                <div>
-                                    <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 5px;">LeetCode</h2>
-                                    <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 25px;">saksham_d</p>
-                                    
-                                    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
-                                        <div style="background: rgba(255,255,255,0.03); padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.02);">
-                                            <span style="display: block; color: #94a3b8; font-size: 0.8rem; margin-bottom: 2px;">Problems Solved</span>
-                                            <span style="color: #fff; font-size: 1.2rem; font-weight: 700;">0</span>
-                                        </div>
-                                        <div style="background: rgba(255,255,255,0.03); padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.02);">
-                                            <span style="display: block; color: #94a3b8; font-size: 0.8rem; margin-bottom: 2px;">Contest Rating</span>
-                                            <span style="color: #fff; font-size: 1.2rem; font-weight: 700;">N/A</span>
-                                        </div>
-                                    </div>
-                                    <div style="display: flex; gap: 15px; margin-bottom: 25px;">
-                                        <span style="color: #00b8a3; font-size: 0.95rem; font-weight: 600;">Easy: 0</span>
-                                        <span style="color: #ffc01e; font-size: 0.95rem; font-weight: 600;">Med: 0</span>
-                                        <span style="color: #ef4743; font-size: 0.95rem; font-weight: 600;">Hard: 0</span>
-                                    </div>
-                                </div>
-                                
-                                <a href="https://leetcode.com/u/saksham_d/" target="_blank" style="display: inline-block; width: fit-content; color: #00d4ff; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: 0.3s; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05);">View Full Profile &rarr;</a>
-                            </div>
-
-                            <!-- HackerRank Profile -->
-                            <div style="flex: 1; min-width: 300px; background: rgba(17, 24, 39, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-                                <div>
-                                    <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 5px;">HackerRank</h2>
-                                    <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 25px;">2532039_Saks</p>
-                                    
-                                    <p style="color: #cbd5e1; line-height: 1.6; margin-bottom: 15px;">Practicing core language fundamentals and earning proficiency badges.</p>
-                                    
-                                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px;">
-                                        <span style="padding: 6px 14px; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2); color: #00d4ff; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Problem Solving</span>
-                                        <span style="padding: 6px 14px; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2); color: #00d4ff; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Python</span>
-                                    </div>
-                                </div>
-                                
-                                <a href="https://www.hackerrank.com/profile/2532039_Saks" target="_blank" style="display: inline-block; width: fit-content; color: #00d4ff; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: 0.3s; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05);">View Full Profile &rarr;</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Tab 3: Current Focus -->
-                <div id="tab-focus" class="tab-content">
-                    <div class="dashboard-panel" style="background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 20px; padding: 40px; backdrop-filter: blur(10px); text-align: left; display: flex; flex-direction: column; gap: 30px;">
-                        
-                        <div style="margin-bottom: 20px;">
-                            <h2 style="font-size: 2.2rem; margin-bottom: 10px; font-weight: 700; color: var(--text-primary);">Current Focus</h2>
-                            <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">What I'm building right now and my immediate goals for the near future.</p>
-                        </div>
-
-                        <!-- Active Item 1 -->
-                        <div style="padding: 30px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 15px; position: relative; overflow: hidden;">
-                            <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, var(--accent-1), var(--accent-2));"></div>
-                            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
-                                <div>
-                                    <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">BeatFrame</h3>
-                                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; max-width: 600px;">Shipping the MVP, integrating the Spotify Web API, and building the core review and rating system architecture.</p>
-                                </div>
-                                <span style="padding: 6px 16px; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2); color: var(--accent-1); border-radius: 20px; font-size: 0.9rem; font-weight: 600; white-space: nowrap;">In Progress (~60% done)</span>
-                            </div>
-                        </div>
-
-                        <!-- Active Item 2 -->
-                        <div style="padding: 30px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 15px; position: relative; overflow: hidden;">
-                            <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, var(--accent-3), var(--accent-4));"></div>
-                            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
-                                <div>
-                                    <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Forge</h3>
-                                    <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; max-width: 600px;">Building a GPT-style LLM from scratch in PyTorch. Currently in early phases of architecture design and dataset preparation.</p>
-                                </div>
-                                <span style="padding: 6px 16px; background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.2); color: var(--accent-3); border-radius: 20px; font-size: 0.9rem; font-weight: 600; white-space: nowrap;">Early Phases</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                <!-- Removed Tab 3: Current Focus -->
 
             </div>
         </section>
