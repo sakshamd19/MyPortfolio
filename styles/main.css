@@ -220,7 +220,7 @@ section {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
@@ -454,20 +454,52 @@ footer {
 
 @media screen and (max-width: 600px) {
     .title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
+    header {
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .nav-links {
-        display: none;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .cta-buttons {
         flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
     }
     
     .timeline-item {
         padding-left: 60px;
         padding-right: 15px;
+    }
+
+    .dashboard-panel {
+        padding: 20px !important;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .semester-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
 
@@ -478,10 +510,11 @@ footer {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
-    padding: 40px;
+    padding: 30px;
     backdrop-filter: blur(10px);
     width: fit-content;
     max-width: 100%;
+    overflow-x: auto;
 }
 
 /* Sidebar Timeline Overrides */
