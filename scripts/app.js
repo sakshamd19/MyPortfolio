@@ -24,6 +24,15 @@ const projects = [
         status: "Releasing Soon ⏳",
         progressLink: "voltos-progress.html",
         featured: true
+    },
+    {
+        title: "Evalithm",
+        description: "An AI model designed to analyze student performance for academic growth, track trending market skills, and guide freshers toward optimal placements.",
+        tech: ["Machine Learning", "Data Analysis", "Python", "AI"],
+        link: "#",
+        status: "Releasing Soon ⏳",
+        progressLink: "evalithm-progress.html",
+        featured: true
     }
 ];
 
