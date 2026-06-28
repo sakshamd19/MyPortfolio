@@ -28,6 +28,11 @@
             <h1 class="title fade-in" style="text-align: center; font-size: 3.5rem; margin-bottom: 10px;">Progress <span class="gradient-text">Dashboard</span></h1>
             <p class="subtitle fade-in" style="text-align: center; margin: 0 auto 40px auto; font-size: 1.1rem; max-width: 600px;">A high-level view of my learning journey and academic progress.</p>
             
+            <div class="tabs-nav fade-in" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+                <button class="tab-btn active" data-tab="tab-learning">Learning Journey</button>
+                <button class="tab-btn" data-tab="tab-coding">Coding Profile</button>
+            </div>
+
             <div id="dashboard-content" style="display: flex; flex-direction: column; gap: 40px; max-width: 1000px; margin: 0 auto; width: 100%;">
                 
                 <!-- Tab 1: Learning Journey -->
@@ -377,8 +382,90 @@
                 </div>
 
                 <!-- Tab 2: Coding Profile -->
-                <!-- Tab removed: Coding Profile -->
+                <!-- Tab 2: Coding Profile -->
+                <div id="tab-coding" class="tab-content" style="display: none; width: 100%;">
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px; width: 100%;">
+                        
+                        <!-- GitHub Profile -->
+                        <div style="background: rgba(17, 24, 39, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; margin-bottom: 20px; flex-wrap: wrap; gap: 15px;">
+                                <div>
+                                    <h2 style="font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 5px;">GitHub</h2>
+                                    <p style="color: #94a3b8; font-size: 1.1rem; margin: 0;">sakshamd19</p>
+                                </div>
+                                <a href="https://github.com/sakshamd19" target="_blank" style="background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 100%); color: #fff; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);">View Profile &rarr;</a>
+                            </div>
+                            
+                            <div style="display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap;">
+                                <div style="background: rgba(255,255,255,0.03); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02);">
+                                    <span style="display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">Repositories</span>
+                                    <span style="color: #fff; font-size: 1.5rem; font-weight: 700;">5</span>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.03); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02);">
+                                    <span style="display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">Followers</span>
+                                    <span style="color: #fff; font-size: 1.5rem; font-weight: 700;">0</span>
+                                </div>
+                                <div style="background: rgba(255,255,255,0.03); padding: 15px 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.02); flex-grow: 1;">
+                                    <span style="display: block; color: #94a3b8; font-size: 0.9rem; margin-bottom: 5px;">Top Languages</span>
+                                    <div style="display: flex; gap: 10px; margin-top: 5px;">
+                                        <span style="color: #00d4ff; font-weight: 600;">Python</span>
+                                        <span style="color: #00d4ff; font-weight: 600;">C++</span>
+                                        <span style="color: #00d4ff; font-weight: 600;">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                            
+                            <!-- LeetCode Profile -->
+                            <div style="flex: 1; min-width: 300px; background: rgba(17, 24, 39, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                <div>
+                                    <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 5px;">LeetCode</h2>
+                                    <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 25px;">saksham_d</p>
+                                    
+                                    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 15px;">
+                                        <div style="background: rgba(255,255,255,0.03); padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.02);">
+                                            <span style="display: block; color: #94a3b8; font-size: 0.8rem; margin-bottom: 2px;">Problems Solved</span>
+                                            <span style="color: #fff; font-size: 1.2rem; font-weight: 700;">4</span>
+                                        </div>
+                                        <div style="background: rgba(255,255,255,0.03); padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.02);">
+                                            <span style="display: block; color: #94a3b8; font-size: 0.8rem; margin-bottom: 2px;">Contest Rating</span>
+                                            <span style="color: #fff; font-size: 1.2rem; font-weight: 700;">N/A</span>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 15px; margin-bottom: 25px;">
+                                        <span style="color: #00b8a3; font-size: 0.95rem; font-weight: 600;">Easy: 4</span>
+                                        <span style="color: #ffc01e; font-size: 0.95rem; font-weight: 600;">Med: 0</span>
+                                        <span style="color: #ef4743; font-size: 0.95rem; font-weight: 600;">Hard: 0</span>
+                                    </div>
+                                </div>
+                                
+                                <a href="https://leetcode.com/u/saksham_d/" target="_blank" style="display: inline-block; width: fit-content; color: #00d4ff; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: 0.3s; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05);">View Full Profile &rarr;</a>
+                            </div>
+
+                            <!-- HackerRank Profile -->
+                            <div style="flex: 1; min-width: 300px; background: rgba(17, 24, 39, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                <div>
+                                    <h2 style="font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 5px;">HackerRank</h2>
+                                    <p style="color: #94a3b8; font-size: 1rem; margin-bottom: 25px;">2532039_Saks</p>
+                                    
+                                    <p style="color: #cbd5e1; line-height: 1.6; margin-bottom: 15px;">Practicing core language fundamentals and earning proficiency badges.</p>
+                                    
+                                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px;">
+                                        <span style="padding: 6px 14px; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2); color: #00d4ff; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Problem Solving</span>
+                                        <span style="padding: 6px 14px; background: rgba(0, 212, 255, 0.1); border: 1px solid rgba(0, 212, 255, 0.2); color: #00d4ff; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">C Language</span>
+                                    </div>
+                                </div>
+                                
+                                <a href="https://www.hackerrank.com/profile/2532039_Saks" target="_blank" style="display: inline-block; width: fit-content; color: #00d4ff; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: 0.3s; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.05);">View Full Profile &rarr;</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
                 <!-- Removed Tab 3: Current Focus -->
 
             </div>
